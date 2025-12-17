@@ -254,20 +254,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👨‍💻 Author
 
 **Keshav Agarwal**
 - GitHub: [@Agarwalkeshav185](https://github.com/Agarwalkeshav185)
-
-## 🙏 Acknowledgments
-
-- Inspired by interactive classroom polling systems
-- Built as part of Intervue assignment
-- Thanks to all contributors and users
 
 ---
 
