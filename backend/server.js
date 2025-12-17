@@ -1,19 +1,21 @@
-require('dotenv').config();
 const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
+const cors = require('cors');
 const connectDB = require('./config/db');
 const pollRoutes = require('./routes/pollRoutes');
 const socketHandler = require('./socket/socketHandler');
-
-// Initialize express app
-const app = express();
 const server = http.createServer(app);
-
 // Connect to MongoDB
 connectDB();
 
+// CORS configuration
+const corsOptions = {
+  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  credentials: true
+};
 
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
