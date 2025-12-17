@@ -5,7 +5,11 @@ const cors = require('cors');
 const connectDB = require('./config/db');
 const pollRoutes = require('./routes/pollRoutes');
 const socketHandler = require('./socket/socketHandler');
+
+// Initialize Express app
+const app = express();
 const server = http.createServer(app);
+
 // Connect to MongoDB
 connectDB();
 
